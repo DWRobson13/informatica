@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Realtech</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./img/WhatsApp_Image_2025-08-29_at_10.56.30-removebg-preview.webp" alt="Logo da Realtech">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <div class="dropdown">
+                    <li><a href="#servicos">Serviços</a></li>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <li><a href="#contato">Contato</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <h1>Seu equipamento em<br> funcionamento de forma<br> rápida e com preço justo em<br> Campinas!</h1>
+        <p>Desde 2006, cuidando de Notebooks, Macs, Computadores, PC Gamers,<br> Nobreaks e Impressoras com agilidade, segurança e garantia que você<br> pode confiar.</p>
+        <a href="#contato" class="btn">Entre em Contato</a>
+    </section>
+
+    <section id="sobre" class="about-section">
+        <h2>Sobre Nós</h2>
+        <p>A Realtech é uma empresa dedicada a fornecer soluções tecnológicas de ponta para empresas de todos os
+            tamanhos. Nossa missão é ajudar nossos clientes a alcançar seus objetivos através da inovação e da
+            tecnologia.</p>
+    </section>
+
+    <section id="servicos" class="services-section">
+        <h2>Nossos Serviços</h2>
+        <div class="service">
+            <h3>Desenvolvimento Web</h3>
+            <p>Criamos sites e aplicações web personalizados para atender às necessidades do seu negócio.</p>
+        </div>
+        <div class="service">
+            <h3>Consultoria em TI</h3>
+            <p>Oferecemos consultoria especializada para otimizar a infraestrutura tecnológica da sua empresa.</p>
+        </div>
+        <div class="service">
+            <h3>Suporte Técnico</h3>
+            <p>Fornecemos suporte técnico contínuo para garantir que seus sistemas funcionem sem problemas.</p>
+        </div>
+    </section>
+
+    <section class="endereco" id="endereco">
+        <h2>Endereço</h2>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10372.962172208183!2d-47.102915256722135!3d-23.04163212249622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cadc1ca37171%3A0x11c4e5bd90be48f2!2sMs%20Info%20Campinas!5e0!3m2!1spt-BR!2sbr!4v1759598730074!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="local">
+                <p>Rua Exemplo, 123 - Campinas, SP</p>
+                <p>Telefone: (19) 1234-5678</p>
+                <p>Email: contato@realtech.com.br</p>
+                <p>Site: www.realtech.com.br</p>
+            </div>
+            
+            <div class="horario">
+                <h2>Horário de Funcionamento:</h2>
+                <p>Segunda a Sexta: 8h - 18h</p>
+                <p>Sábado: 9h - 13h</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact-section">
+        <h2>Contato</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Realtech. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="funcoes.js"></script>
+
+</html>
