@@ -3,7 +3,7 @@
     --cor-secundaria: #2ecc71;
     --cor-fundo: #f4f4f4;
     --cor-texto: #333;
-    --cor-borda: #eee;
+    --cor-borda: #ddd;
 }
 body {
     font-family: Arial, sans-serif;
@@ -18,17 +18,17 @@ header {
     padding: 10px 0;
 }
 .logo img {
-    max-width: 300px;
-    margin: 0 auto;
-    display: block;
+    max-width: 200px;
+    margin: 0 50px;
 }
 .nav-links {
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 .nav-links li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 35px;
+    font-size: x-large;
 }
 .nav-links a {
     color: #fff;
@@ -64,6 +64,7 @@ header {
     background-image: url(./img/chips-de-coches-y-electronicos-131042-1170x658.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 70%;
 }
 .home-section h1 {
     font-size: 2.5em;
@@ -84,23 +85,16 @@ header {
     text-decoration: none;
     border-radius: 5px;
 }
-.menu-icon {
-    display: none;
-    margin: 20px 50px;
-    cursor: pointer;
-}
-.menu-icon .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: #fff;
-    margin: 5px auto;
-    transition: all 0.3s;
-}
 .about-section{
     padding: 50px 20px;
     text-align: center;
 }
+.sobre-1{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*<<<<<<<<<<"Nossos Serviços">>>>>>>>>>*/
 .services-section {
     padding: 50px 20px;
     text-align: center;
@@ -109,18 +103,58 @@ header {
     font-size: xx-large;
     margin-bottom: 20px;
 }
-.contact-section {
-    padding: 50px 20px;
+.box-service{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+.service img {
+    border-radius: 5%;
+    width: 90%;
+    height: 200px;
+    margin-top: 10px;
+}
+.service {
+    width: 300px;
+    background-color: var(--cor-borda);
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 5%;
+}
+/*<<<<<<<<<<"Descrição">>>>>>>>>>*/
+.descricao {
+    width: 100%;
+    height: 80%;
     text-align: center;   
+}
+.descricao h2{
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+.desc img {
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+.desc p {
+    font-size: 16px;
+    margin: 20px;
+    color: var(--cor-texto);
+}
+.desc{
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 5%;
+    border: 1px solid var(--cor-texto);
+    display: flex;
 }
 .about-section h2{
     font-size: xx-large;
     margin-bottom: 20px;
 }
-.service {
-    text-align: center;
-    margin-bottom: 30px;
-}
+/*<<<<<<<<<<"Enderço">>>>>>>>>>*/
 .endereco {
     text-align: center;
     color: var(--cor-texto);
@@ -137,6 +171,11 @@ header {
     border: 0;
     margin-bottom: 20px;
 }
+/*<<<<<<<<<<"Contato">>>>>>>>>>*/
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;   
+}
 .contact-section form {
     max-width: 400px;
     margin: 0 auto;
@@ -149,6 +188,7 @@ header {
     background: var(--cor-secundaria);
     color: #fff;
     padding: 10px 20px;
+    margin: 10px 0;
     width: 100px;
     text-decoration: none;
     border-radius: 5px;
@@ -173,7 +213,5 @@ footer {
         display: block;
     }
 }
-/*<<<<<<<<<<"">>>>>>>>>>*/
-/*<<<<<<<<<<"">>>>>>>>>>*/
 /*<<<<<<<<<<"">>>>>>>>>>*/
 /*<<<<<<<<<<"">>>>>>>>>>*/
