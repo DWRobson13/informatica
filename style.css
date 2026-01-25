@@ -1,45 +1,52 @@
-:root {
+:root { /* Definição de variáveis CSS para cores */
     --cor-principal: #3498db;
     --cor-secundaria: #2ecc71;
     --cor-fundo: #f4f4f4;
     --cor-texto: #333;
     --cor-borda: #ddd;
 }
-body {
+body { /* Estilos para o corpo da página */
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: var(--cor-fundo);
 }
-header {
+header { /* Estilos para o cabeçalho */
     background: var(--cor-principal);
     color: #fff;
-    padding: 10px 0;
+    padding: 10px 0;  
 }
-.logo img {
-    max-width: 200px;
-    margin: 0 50px;
+.logo img { /* Estilos para o logotipo */
+    width: 150px;
+    margin: 0 30px; 
 }
-.nav-links {
+nav { /* Estilos para a barra de navegação */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-links { /* Estilos para a lista de navegação */
     list-style: none;
     display: flex;
     justify-content: center;
 }
-.nav-links li {
+.nav-links li { /* Estilos para os itens da lista de navegação */
     margin: 0 35px;
     font-size: x-large;
 }
-.nav-links a {
+.nav-links a { /* Estilos para os links de navegação */
     color: #fff;
     text-decoration: none;
 }
+
 /*<<<<<<<<<<"Menu Suspenso">>>>>>>>>>*/
-.dropdown {
+.dropdown { /* Estilos para o contêiner do menu suspenso */
     position: relative;
     display: inline-block;
 }
-.dropdown-content {
+.dropdown-content { /* Estilos para o conteúdo do menu suspenso */
+    border-radius: 5px;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -47,36 +54,38 @@ header {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-.dropdown-content a {
+.dropdown-content a {  /* Estilos para os links do menu suspenso */
+    border-radius: 5px;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-.dropdown-content a:hover {
+.dropdown-content a:hover { /* Estilo ao passar o mouse sobre os links do menu suspenso */
     background-color: #f1f1f1;
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content { /* Exibe o conteúdo do menu suspenso ao passar o mouse */
     display: block;
 }
+
 /*<<<<<<<<<<"Home">>>>>>>>>>*/
-.home-section {
+.home-section { /* Estilos para a seção home */
     background-image: url(./img/chips-de-coches-y-electronicos-131042-1170x658.webp);
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 70%;
 }
-.home-section h1 {
+.home-section h1 { /* Estilos para o título na seção home */
     font-size: 2.5em;
     margin: 0 50px;
     color: var(--cor-fundo);
 }
-.home-section p {
+.home-section p { /* Estilos para o parágrafo na seção home */
     font-size: 1.2em;
     margin: 20px 50px;
     color: var(--cor-fundo);
 }
-.home-section .btn {
+.home-section .btn { /* Estilos para o botão na seção home */
     width: auto;
     background: var(--cor-secundaria);
     color: #fff;
@@ -85,109 +94,119 @@ header {
     text-decoration: none;
     border-radius: 5px;
 }
-.about-section{
+.about-section{ /* Estilos para a seção sobre */
     padding: 50px 20px;
     text-align: center;
 }
-.sobre-1{
+.sobre-1{ /* Estilos para o contêiner sobre */
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
+
 /*<<<<<<<<<<"Nossos Serviços">>>>>>>>>>*/
-.services-section {
+.services-section { /* Estilos para a seção de serviços */
     padding: 50px 20px;
     text-align: center;
 }
-.services-section h2{
+.services-section h2{ /* Estilos para o título da seção */
     font-size: xx-large;
     margin-bottom: 20px;
 }
-.box-service{
+.box-service{ /* Estilos para o contêiner dos serviços */
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: nowrap;
 }
-.service img {
+.service img { /* Estilos para as imagens dos serviços */
     border-radius: 5%;
     width: 90%;
     height: 200px;
     margin-top: 10px;
 }
-.service {
+.service { /* Estilos para cada serviço individual */
     width: 300px;
     background-color: var(--cor-borda);
     text-align: center;
     margin-bottom: 30px;
     border-radius: 5%;
 }
+
 /*<<<<<<<<<<"Descrição">>>>>>>>>>*/
-.descricao {
+.descricao { /* Estilos para a seção de descrição */
     width: 100%;
     height: 80%;
     text-align: center;   
 }
-.descricao h2{
+.descricao h2{ /* Estilos para o título da seção */
     font-size: xx-large;
     margin-bottom: 20px;
 }
-.desc img {
+.desc img { /* Estilos para a imagem da descrição */
     border-radius: 5%;
     width: 100%;
     height: auto;
     margin: 20px;
 }
-.desc p {
+.desc p { /* Estilos para o parágrafo da descrição */
     font-size: 16px;
     margin: 20px;
     color: var(--cor-texto);
 }
-.desc{
+.desc{ /* Estilos para o contêiner da descrição */
     max-width: 900px;
     margin: 0 auto;
     border-radius: 5%;
     border: 1px solid var(--cor-texto);
     display: flex;
 }
-.about-section h2{
+.about-section h2{ /* Estilos para o título da seção sobre */
     font-size: xx-large;
     margin-bottom: 20px;
-}
+} 
+
 /*<<<<<<<<<<"Enderço">>>>>>>>>>*/
-.endereco {
+.endereco { /* Estilos para a seção de endereço */
     text-align: center;
     color: var(--cor-texto);
     background-color: var(--cor-principal);
 }
-.endereco h2 {
+.endereco h2 { /* Estilos para o título da seção */
     font-size: xx-large;
     color: #fff;
     margin-top: 20px;
 }
-.endereco iframe {
+.endereco iframe { /* Estilos para o mapa incorporado */
     width: 90%;
     height: 400px;
     border: 0;
     margin-bottom: 20px;
 }
+
 /*<<<<<<<<<<"Contato">>>>>>>>>>*/
-.contact-section {
+.contact-section { /* Estilos para a seção de contato */
     padding: 50px 20px;
     text-align: center;   
 }
-.contact-section h2{
+.contact-section h2{ /* Estilos para o título da seção */
     font-size: xx-large;
     margin-bottom: 20px;
 }
-.contact-section form {
+.cont-1{ /* Estilos para o contêiner de contato */
+    width: 30%;
+    height: 100%;
+    display: flex;
+    border: 1px solid var(--cor-texto);
+}
+.contact-section form { /* Estilos para o formulário de contato */
     max-width: 400px;
     margin: 0 auto;
     text-align: left;
     display: flex;
     flex-direction: column;
 }
-.btn {
+.btn { /* Estilos para o botão */
     display: inline-block;
     background: var(--cor-secundaria);
     color: #fff;
@@ -197,14 +216,15 @@ header {
     text-decoration: none;
     border-radius: 5px;
 }
+
 /*<<<<<<<<<<"Roda Pé">>>>>>>>>>*/
-footer {
+footer { /* Estilos para o rodapé */
     text-align: center;
     padding: 20px 0;
     background: var(--cor-principal);
     color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 426px) { /* Estilos para telas menores que 426px */
     .nav-links {
         display: none;
         text-align: center;
