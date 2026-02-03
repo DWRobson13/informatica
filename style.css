@@ -116,7 +116,7 @@ nav { /* Estilos para a barra de navegação */
 .box-service{ /* Estilos para o contêiner dos serviços */
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: nowrap;
 }
 .service img { /* Estilos para as imagens dos serviços */
@@ -145,21 +145,25 @@ nav { /* Estilos para a barra de navegação */
 }
 .desc img { /* Estilos para a imagem da descrição */
     border-radius: 5%;
-    width: 100%;
-    height: auto;
+    min-width: 300px;
+    width: 90%;
+    height: 400px;
     margin: 20px;
 }
 .desc p { /* Estilos para o parágrafo da descrição */
     font-size: 16px;
     margin: 20px;
     color: var(--cor-texto);
+    text-align: center;
 }
 .desc{ /* Estilos para o contêiner da descrição */
-    max-width: 900px;
     margin: 0 auto;
     border-radius: 5%;
     border: 1px solid var(--cor-texto);
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .about-section h2{ /* Estilos para o título da seção sobre */
     font-size: xx-large;
@@ -194,15 +198,16 @@ nav { /* Estilos para a barra de navegação */
     margin-bottom: 20px;
 }
 .cont-1{ /* Estilos para o contêiner de contato */
-    width: 30%;
+    width: 100%;
     height: 100%;
     display: flex;
     border: 1px solid var(--cor-texto);
 }
 .contact-section form { /* Estilos para o formulário de contato */
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
-    text-align: left;
+    padding: 20px;
+    text-align: left; 
     display: flex;
     flex-direction: column;
 }
@@ -236,6 +241,17 @@ footer { /* Estilos para o rodapé */
     .menu-icon {
         display: block;
     }
+  
 }
+.seta{ /* Estilos para o ícone do menu */
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: xx-large;
+    color: var(--cor-texto);
+    cursor: pointer;
+    margin: 15px;
+    
+}   
 /*<<<<<<<<<<"">>>>>>>>>>*/
 /*<<<<<<<<<<"">>>>>>>>>>*/
