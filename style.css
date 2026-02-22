@@ -32,8 +32,8 @@ nav { /* Estilos para a barra de navegação */
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
    
-    
 }
 .nav-links li { /* Estilos para os itens da lista de navegação */
     margin: 0 35px;
@@ -42,6 +42,8 @@ nav { /* Estilos para a barra de navegação */
 .nav-links a { /* Estilos para os links de navegação */
     color: #fff;
     text-decoration: none;
+    background-color: var(--cor-secundaria);
+
 }
 
 /*<<<<<<<<<<"Menu Suspenso">>>>>>>>>>*/
@@ -238,15 +240,14 @@ footer { /* Estilos para o rodapé */
 @media (max-width: 426px) { /* Estilos para telas menores que 426px */
     .nav-links {
         display: none;
-        text-align: center;  
+        text-align: center;
+         
     }
     .nav-links li {
         display: block;
         margin: 10px 0;
     }
-    .menu-icon {
-        display: block;
-    }
+   
   
 }
 .seta{ /* Estilos para o ícone do menu */
